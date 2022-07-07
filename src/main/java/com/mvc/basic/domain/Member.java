@@ -1,7 +1,14 @@
 package com.mvc.basic.domain;
 
+
+import javax.persistence.*;
+
+@Entity
 public class Member {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) // 알아서 pk 생성
     private Long id;
+
     private String name;
 
     public Long getId() {

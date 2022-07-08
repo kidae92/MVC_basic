@@ -1,6 +1,7 @@
 package com.mvc.basic;
 
 
+import com.mvc.basic.aop.TimeTraceAop;
 import com.mvc.basic.repository.JdbcMemberRepository;
 
 import com.mvc.basic.repository.JdbcTemplateMemberRepository;
@@ -28,6 +29,8 @@ public class SpringConfig {
     public MemberService memberService(){
         return new MemberService(memberRepository);
     }
+
+
 //
 //    @Bean
 //    public MemberRepository memberRepository(){
